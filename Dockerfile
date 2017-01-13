@@ -38,3 +38,10 @@ COPY . /app
 
 EXPOSE 8080
 CMD ["nami", "start", "--foreground", "tomcat"]
+##   $ docker build -t minideb-for-reohinho-polymer-test .
+##
+## RUNNING
+##   $ docker run minideb-for-reohinho-polymer-test
+
+FROM gcr.io/stacksmith-images/minideb-buildpack:jessie-r8
+
